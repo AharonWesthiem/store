@@ -17,7 +17,7 @@ export default function Item({ item, isInCart }) {
   }
 
   const removeItem = (id) => {
-    // debugger
+
     if (!cartList[id]) return;
     let copied = { ...cartList }
     if (copied[id].qty > 1) {
@@ -44,7 +44,7 @@ export default function Item({ item, isInCart }) {
       </div>}
       <br></br>
       <div style={{ cursor: "pointer" }} onClick={() => location.href = 'http://localhost:5173/item/' + id}>
-        <div>{name}</div>
+        <div>{name} </div>
         <div>{emoji}</div>
         <div>{price}</div>
       </div>

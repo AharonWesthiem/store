@@ -17,7 +17,7 @@ export default function Layout() {
 
 
   useEffect(() => {
-    fetch('https://jbh-mockserver.onrender.com/fruits')
+    fetch('https://jbh-mockserver.onrender.com/categories/alcohol')
       .then(r => r.json())
       .then(data => {
         setItems(data)
