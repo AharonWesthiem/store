@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Fortal() {
   const [categories, setcategories] = useState({})
@@ -18,10 +19,13 @@ export default function Fortal() {
     <div >
       {Object.keys(categories).map(item =>
         <div>
+        <Link to={"/categories/" + item }>
           <h2>{item}</h2>
           <img style={{width: "100px"}} 
           src={categories[item]} />
+          </Link>
           <div />
+
 
 
 
